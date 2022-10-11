@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Age Calculator Start-->
+    <div class="ageCal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title text-center">
+                        <h1 class="display-2 text-primary py-4">Age Calculator</h1>
+                        <p class="lead pb-4">The Age Calculator can determine the age or interval between two dates. The calculated age will be displayed in years, months, weeks, days, hours, minutes, and seconds</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <form>
+                        <input type="date" name="" id="" placeholder="Select Date Time" class="form-control">
+                        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#Modal1">
+                            Calculate Age
+                        </button>
+                    </form>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title display-5 text-primary" id="exampleModalLabel">Result</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                   <h4 class="display-6">Your Age is: </h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Age Calculator End-->
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
