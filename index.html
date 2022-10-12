@@ -25,8 +25,8 @@
             <div class="row">
                 <div class="col-md-4 offset-md-4">
                     <form>
-                        <input type="date" name="" id="" placeholder="Select Date Time" class="form-control my-4">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1" onclick="">
+                        <input type="date" name="" id="dateInput" placeholder="Select Date Time" class="form-control my-4">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1" onclick="calc()" id="getResult">
                             Calculate Age
                         </button>
                     </form>
@@ -40,7 +40,12 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                   <h4 class="display-6">Your Age is: </h4>
+                                   <h4 id="noData">Your Age is:
+                                        <span id="rYear"> Years</span>
+                                        <span id="rMonth"> Month</span>
+                                        <span id="rDay"> Days</span>
+                                   </h4>
+                                   
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
