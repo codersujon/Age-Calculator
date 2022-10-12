@@ -21,6 +21,10 @@ function calc(){
     var rDay = _day + 30 - _getDay;
     var rMonth = _month + 12 - _getMonth;
     var rYear = _year - 1 - _getYear;
+
+    if(_dateInput == null){
+        document.getElementById("noDataShow").textContent.display =  "none";
+   }
     
    //Condition Apply
     if(rDay >= 30){
